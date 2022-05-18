@@ -6,11 +6,13 @@
 /*   By: enunez-n <enunez-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 17:47:19 by enunez-n          #+#    #+#             */
-/*   Updated: 2022/05/09 09:47:23 by enunez-n         ###   ########.fr       */
+/*   Updated: 2022/05/18 07:25:55 by enunez-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//String of digits to integer. See man atoi.
 
 static int	ft_isspace(const char *str)
 {
