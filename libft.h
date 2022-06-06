@@ -6,12 +6,13 @@
 /*   By: enunez-n <enunez-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 15:25:49 by enunez-n          #+#    #+#             */
-/*   Updated: 2022/04/28 16:57:43 by enunez-n         ###   ########.fr       */
+/*   Updated: 2022/06/06 16:50:22 by enunez-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -66,5 +67,23 @@ char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+
+//ft_printf.c functions:
+int					ft_printf(const char *format, ...);
+void				ft_evaluator(const char conversion, va_list args,
+						int *printlen);
+
+// printchars.c functions:
+int					ft_printchar(int c);
+int					ft_printstring(char *str);
+
+// printdigits.c functions:
+int					ft_printdec(long num);
+int					ft_printudec(unsigned long n);
+int					ft_countdec(long num);
+
+// printhexa.c functions:
+int					ft_basehexa(unsigned long long num, int up);
+int					ft_printptr(uintptr_t ptr);
 
 #endif

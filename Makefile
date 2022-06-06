@@ -31,7 +31,11 @@ SRC = ft_atoi.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
-	ft_toupper.c
+	ft_toupper.c \
+	ft_printf.c \
+	printchars.c \
+	printdigits.c \
+	printhexa.c
 
 SRC_BONUS = ft_lstnew_bonus.c \
 	ft_lstadd_front_bonus.c \
