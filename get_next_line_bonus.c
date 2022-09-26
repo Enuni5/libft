@@ -6,7 +6,7 @@
 /*   By: enunez-n <enunez-n@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 12:08:56 by enunez-n          #+#    #+#             */
-/*   Updated: 2022/09/06 12:25:11 by enunez-n         ###   ########.fr       */
+/*   Updated: 2022/09/21 17:42:07 by enunez-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_save_buffer(int fd, char *buffsave)
 		}
 		tmp[bytesread] = '\0';
 		if (!buffsave)
-			buffsave = ft_newstr();
+			buffsave = ft_newstr_get();
 		buffsave = ft_strjoin(buffsave, tmp);
 	}
 	free(tmp);

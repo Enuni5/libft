@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enunez-n <enunez-n@student.42.fr>          +#+  +:+       +#+        */
+/*   By: enunez-n <enunez-n@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 07:22:08 by enunez-n          #+#    #+#             */
-/*   Updated: 2022/05/09 09:17:22 by enunez-n         ###   ########.fr       */
+/*   Updated: 2022/09/21 20:36:53 by enunez-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	*save_words(const char *str, char c)
 	i = 0;
 	while (str[i] && str[i] != c)
 		i++;
-	word = (char *)malloc(sizeof(char) * (i + 1));
+	word = malloc(sizeof(char) * (i + 1));
 	if (!word)
 		return (NULL);
 	i = 0;
@@ -65,7 +65,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words_count = word_count(s, c);
-	splitted = (char **)malloc(sizeof(char *) * (words_count + 1));
+	splitted = malloc(sizeof(char *) * (words_count + 1));
 	if (!splitted)
 		return (NULL);
 	i = 0;
@@ -81,6 +81,6 @@ char	**ft_split(char const *s, char c)
 				s++;
 		}
 	}
-	splitted[i] = 0;
+	splitted[words_count] = 0;
 	return (splitted);
 }

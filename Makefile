@@ -37,9 +37,8 @@ SRC = ft_atoi.c \
 	printdigits.c \
 	printhexa.c \
 	get_next_line_bonus.c \
-	get_next_line_utils_bonus.c
-
-SRC_BONUS = ft_lstnew_bonus.c \
+	get_next_line_utils_bonus.c \
+	ft_lstnew_bonus.c \
 	ft_lstadd_front_bonus.c \
 	ft_lstsize_bonus.c \
 	ft_lstlast_bonus.c \
@@ -50,8 +49,6 @@ SRC_BONUS = ft_lstnew_bonus.c \
 	ft_lstmap_bonus.c
 
 OBJS = ${SRC:.c=.o}
-
-OBJS_BONUS = ${SRC_BONUS:.c=.o}
 
 NAME = libft.a
 
@@ -72,12 +69,8 @@ $(NAME): ${OBJS}
 
 all: ${NAME}
 
-bonus: ${OBJS_BONUS} ${OBJS}
-	@${AR} ${NAME} ${OBJS} ${OBJS_BONUS}
-	@echo Libft with lists functions 🧑‍💻 Compiled 💙
-
 clean:
-	@${RM} ${OBJS} ${OBJS_BONUS} 
+	@${RM} ${OBJS}
 	@echo Removing objects 🧹
 
 fclean: clean
@@ -86,4 +79,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus 
+.PHONY: all clean fclean re 
