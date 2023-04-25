@@ -6,7 +6,7 @@
 /*   By: enunez-n <enunez-n@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 15:25:49 by enunez-n          #+#    #+#             */
-/*   Updated: 2022/09/06 12:25:11 by enunez-n         ###   ########.fr       */
+/*   Updated: 2023/04/25 17:17:58 by enunez-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct s_list
 
 // basic functions
 
-int					ft_atoi(const char *str);
+long				ft_atoi(const char *str);
 void				*ft_bzero(void *b, unsigned long len);
 void				*ft_calloc(size_t count, size_t size);
 int					ft_isalnum(int c);
