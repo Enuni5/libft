@@ -67,7 +67,11 @@ $(NAME): ${OBJS}
 	@${AR} ${NAME} ${OBJS} 
 	@echo Libft 🧑‍💻 Compiled 💙
 
-all: ${NAME}
+all: norminette ${NAME}
+
+norminette: 
+	@echo "\n *** CHECKING 42 NORMINETTE AT LIBFT ***\n"
+	@norminette .
 
 clean:
 	@${RM} ${OBJS}
