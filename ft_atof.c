@@ -6,7 +6,7 @@
 /*   By: emilionunez <emilionunez@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 17:47:19 by enunez-n          #+#    #+#             */
-/*   Updated: 2023/07/20 13:05:52 by emilionunez      ###   ########.fr       */
+/*   Updated: 2023/07/20 13:07:07 by emilionunez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,4 @@ double	ft_atof(const char *str)
 	else
 		num -= (decimals / i);
 	return (num);
-
 }
