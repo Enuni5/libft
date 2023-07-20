@@ -46,7 +46,8 @@ SRC = ft_atoi.c \
 	ft_lstdelone_bonus.c \
 	ft_lstclear_bonus.c \
 	ft_lstiter_bonus.c \
-	ft_lstmap_bonus.c
+	ft_lstmap_bonus.c \
+	ft_atof.c
 
 OBJS = ${SRC:.c=.o}
 
@@ -61,7 +62,7 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
 .c.o:
-	@${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+	@${CC} -g ${CFLAGS} -c $< -o ${<:.c=.o}
 
 $(NAME): ${OBJS}
 	@${AR} ${NAME} ${OBJS} 
