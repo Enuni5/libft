@@ -6,12 +6,11 @@
 /*   By: emilionunez <emilionunez@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 17:47:19 by enunez-n          #+#    #+#             */
-/*   Updated: 2023/07/20 12:50:31 by emilionunez      ###   ########.fr       */
+/*   Updated: 2023/07/20 13:05:52 by emilionunez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 //String of digits to float.
 
