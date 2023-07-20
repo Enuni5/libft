@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atof.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enunez-n <enunez-n@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: emilionunez <emilionunez@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 17:47:19 by enunez-n          #+#    #+#             */
-/*   Updated: 2023/07/19 21:05:22 by enunez-n         ###   ########.fr       */
+/*   Updated: 2023/07/20 12:50:31 by emilionunez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 //String of digits to float.
 
@@ -50,7 +51,7 @@ double	ft_atof(const char *str)
 		i = i * 10;
 		decimals_pos--;
 	}
-	if (num >= 0)
+	if (num >= 0 && !ft_strchr(str, '-'))
 		num += (decimals / i);
 	else
 		num -= (decimals / i);
